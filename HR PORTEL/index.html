@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR PORTEL</title>
+    <link rel="icon" href="./image/icon.jpeg">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: arial,sans-serif;
+            background-color: cornflowerblue;
+
+        }
+
+        header, footer  {
+            background-color: rgb(67, 59, 124);
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem  {
+            display: inline;
+            padding: 15px;
+
+        }
+        .navitem a{
+            text-decoration: underline;
+            color: aliceblue;
+        }
+        .registerform{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .employeetable{
+            text-align: center;
+
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid rgb(67, 59, 124);
+            padding: 8px;
+        }
+        .contactus{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <Header>
+
+        <h1>Welcome To Our Company HR Portel</h1>
+        <nav class="navitem">
+
+             <ul>
+                <li class="navitem"> <a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </Header>
+    
+    <image src="./image/image2.webp" style="width:100% ;"></image>
+
+
+    <section for="employee-registration"  class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to registration as <em>Employee</em> </p> 
+        <form>
+            <label for="name" >Name:</label>
+            <input type="text" id="name"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email"><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password"><br><br>
+            <label for="Age">Age</label>
+            <input type="Age" id="Age"><br><br>
+            <label for="role">Select Role:</label>
+            <select>
+                <option>Software Engineer</option>
+                <option>Product Manager</option>
+                <option>Designer</option>
+                <option>HR Representative</option>
+            </select><br><br>
+            <label for="joiningdate">Joining Date</label>
+            <input type="date" id="joiningdate"><br><br>
+
+        </form>
+        <input type="submit"><br><br>
+    </section>
+
+    <section for="employee-directory"  class="employeetable">
+        <h2>Employee Directory</h2>
+        <p>Directory of all registered employees.</p>
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>John</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>Rajveer</td>
+                <td>Product Manager</td>
+            </tr>
+                
+                <tr>
+
+                <td>203</td>
+                <td>Ravi kumar </td>
+                <td>HR Representative</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section for="contact-us" class="contactus">
+        <h2>Contact Us</h2>
+        <p>You can visit us at company@offical.com or visit us between 9am - 6pm</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90608.57173920139!2d78.40307160750496!3d17.44851038172648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9186c9216501%3A0x5b92f2e1fd8fc012!2sJawaharlal%20Nehru%20Technological%20University%20Hyderabad!5e0!3m2!1sen!2sin!4v1710692334848!5m2!1sen!2sin" width="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Jawaharlal Nehru Technologies & Solutions</p>
+    </footer>
+</body>
+</html>
